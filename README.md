@@ -4,8 +4,17 @@ A prototype dashboard interface that showcases a simple school dashboard.
 
 ## Installation
 
-No build step is required. Copy `.env.example` to `.env` and adjust `API_URL` to point
-to your backend. Open `dashboard.html` directly in your browser to load the front end.
+### Backend
+1. Copy `app/.env.example` to `app/.env` and adjust `PORT` and `CORS_ORIGIN` if needed.
+2. Start the server:
+   ```bash
+   cd app
+   npm start
+   ```
+
+### Frontend
+1. Copy `web/.env.example` to `web/.env` and set `API_URL` to your backend base URL.
+2. Open `web/dashboard.html` directly in your browser.
 
 ## Usage
 
@@ -17,15 +26,20 @@ expects an API at `API_URL` and includes a small connectivity check that calls t
 
 ```
 .
-├── .env.example
 ├── README.md
-├── dashboard.html
-└── assets
-    ├── css
-    │   └── dashboard.css
-    └── js
-        ├── api.js
-        └── dashboard.js
+├── app
+│   ├── .env.example
+│   ├── package.json
+│   └── server.js
+└── web
+    ├── .env.example
+    ├── assets
+    │   ├── css
+    │   │   └── dashboard.css
+    │   └── js
+    │       ├── api.js
+    │       └── dashboard.js
+    └── dashboard.html
 ```
 
 ## Contributing
@@ -42,5 +56,3 @@ Suggested tooling for moving the dashboard from development to production:
 4. **Database** – use a managed solution such as PlanetScale (serverless MySQL) or AWS RDS.
 5. **Domain & SSL** – route traffic and secure HTTPS using Cloudflare.
 6. **Monitoring & Logging** – track errors with Sentry and analyze user traffic through Google Analytics.
-
-

@@ -1,0 +1,11 @@
+{
+  "name": "dashboard-app",
+  "version": "1.0.0",
+  "description": "Minimal backend for dashboard API",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node server.js & sleep 1 && kill $!"
+  }
+}
