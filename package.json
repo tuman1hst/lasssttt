@@ -1,0 +1,32 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite --host",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.13",
+        "axios": "^1.8.2",
+        "laravel-vite-plugin": "^1.2.0",
+        "lodash": "^4.17.19",
+        "postcss": "^8.4.31",
+        "tailwindcss": "^3.2.4",
+        "vite": "^6.3.4"
+    },
+    "dependencies": {
+        "@alpinejs/persist": "^3.10.5",
+        "@fortawesome/fontawesome-free": "^6.2.1",
+        "@playwright/test": "^1.54.2",
+        "alpinejs": "^3.10.5"
+    },
+    "name": "skuul-main",
+    "version": "1.0.0",
+    "description": "<p align=\"center\">     <!-- <a href=\"https://packagist.org/packages/yungifez/skuul\">         <img src=\"https://poser.pugx.org/yungifez/skuul/d/total.svg\" alt=\"Total Composer Downloads\">     </a> -->     <a href=\"https://packagist.org/packages/yungifez/skuul\">         <img src=\"https://poser.pugx.org/yungifez/skuul/v/stable.svg\" alt=\"Latest Stable Version\">     </a>     <a href=\"https://packagist.org/packages/yungifez/skuul\">         <img src=\"https://poser.pugx.org/yungifez/skuul/license.svg\" alt=\"License\">     </a> </p>",
+    "main": "postcss.config.js",
+    "directories": {
+        "test": "tests"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
